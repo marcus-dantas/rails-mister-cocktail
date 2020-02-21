@@ -19,4 +19,9 @@ ingredients['drinks'].each do |ingredient|
   puts "created ingredient #{Ingredient.name}"
 end
 
+100.times do Cocktail.create(
+  name: Faker::Beer.name
+  )
+end
+
 puts 'Finished!'

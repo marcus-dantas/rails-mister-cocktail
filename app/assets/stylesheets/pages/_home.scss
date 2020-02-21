@@ -41,9 +41,11 @@ a:hover {
 }
 
 .cocktail-card {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
-  width: 300px;
+  width: 100%;
   text-align: center;
   justify-items: center;
   color: $pink;
@@ -56,9 +58,6 @@ a:hover {
   margin-top: 20px;
   & a {
     color: $pink;
-    position: absolute;
-    top: 80px;
-    right: 95px;
   }
 }
 
