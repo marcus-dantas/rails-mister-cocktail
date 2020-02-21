@@ -1,1 +1,60 @@
 // Specific CSS for your home-page
+body {
+  // background: #512b58;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.title {
+  font-family: $title;
+  margin: 0;
+  color: #2a7886;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 30px;
+  font-family: $medium-font;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.cocktail-container {
+  display: flex;
+}
+
+.cocktail-card {
+  display: flex;
+  height: 250px;
+  width: 350px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #79bac1;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: $light-font;
+  box-shadow: 1px 1px 15px 5px rgba(10,10,10, 0.4);
+  border-radius: 6px;
+  text-decoration: none;
+}
