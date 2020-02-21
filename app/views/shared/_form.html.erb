@@ -3,5 +3,6 @@
     <%= f.input :name %>
     <%= f.association :ingredients, as: :check_boxes %>
     <%= f.button :submit, class: 'btn btn-secondary' %>
+    <%= link_to 'back', root_path, class: 'btn btn-secondary' %>
   <% end %>
 </div>

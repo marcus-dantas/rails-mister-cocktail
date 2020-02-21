@@ -3,6 +3,10 @@ body {
   // background: #512b58;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
@@ -57,4 +61,16 @@ body {
   box-shadow: 1px 1px 15px 5px rgba(10,10,10, 0.4);
   border-radius: 6px;
   text-decoration: none;
+}
+
+.remove-decoration {
+  text-decoration: none;
+}
+
+#main-btn {
+  font-size: 20px;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
