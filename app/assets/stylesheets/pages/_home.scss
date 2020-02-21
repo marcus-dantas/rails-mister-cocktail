@@ -7,19 +7,6 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
 .banner {
   background-size: cover;
   background-position: center;
@@ -44,16 +31,19 @@ a:hover {
 }
 
 .cocktail-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  margin: 0 auto;
+  grid-gap: 16px;
+  width: 80vw;
 }
 
 .cocktail-card {
-  display: flex;
   height: 250px;
   width: 350px;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  text-align: center;
   color: #79bac1;
   font-weight: bold;
   font-size: 20px;
@@ -69,8 +59,4 @@ a:hover {
 
 #main-btn {
   font-size: 20px;
-
-  &:hover {
-    text-decoration: none;
-  }
 }

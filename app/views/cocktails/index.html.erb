@@ -6,11 +6,11 @@
   </div>
 </div>
 
-<div class="cocktail-container container">
-  <div class="cocktail-card" style="background-image: linear-gradient(rgba(20,20,20, 0.4), rgba(20,20,20, 0.4)), url(https://source.unsplash.com/random/350x250)">
-    <% @cocktails.each do |cocktail| %>
+<div class="cocktail-container">
+  <% @cocktails.each do |cocktail| %>
+    <div class="cocktail-card" style="background-image: linear-gradient(rgba(20,20,20, 0.4), rgba(20,20,20, 0.4)), url(https://source.unsplash.com/random/350x250)">
       <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
 
