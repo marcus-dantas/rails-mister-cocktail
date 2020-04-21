@@ -11,6 +11,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  position: relative;
 }
 
 .title {
@@ -68,4 +69,18 @@ a:hover {
 
 #main-btn {
   font-size: 20px;
+}
+
+.btn-search {
+  padding: 4px;
+}
+
+.form-inline {
+  position: absolute;
+  right: 20%;
+  top: 60%;
+}
+
+.form-control {
+
 }
