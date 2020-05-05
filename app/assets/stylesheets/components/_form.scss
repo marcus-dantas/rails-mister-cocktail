@@ -1,0 +1,22 @@
+.form-container {
+  margin: 2rem 0;
+  transform: translate(25rem);
+}
+.form-checkboxes[type="checkbox"] {
+  display: inline-block;
+  // flex-wrap: wrap;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5rem;
+  height: 5rem;
+}
+.form-check {
+  appearance: none;
+}
+.form-horizontal {
+  div.checkbox.inline {
+    .control-label {
+      text-align: left;
+    }
+  }
+}
