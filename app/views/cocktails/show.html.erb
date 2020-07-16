@@ -10,5 +10,18 @@
   <div class="cocktail-description">
     <h2>Preparation</h2>
     <p><%= @cocktail.preparation %></p>
+    <p><%= @cocktail.ingredients %></p>
+    <%= link_to 'back', root_path, class: 'btn-yours btn-show' %>
   </div>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Made with <i class="fas fa-heart"></i>
 </div>

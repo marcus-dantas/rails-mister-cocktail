@@ -53,6 +53,7 @@ a:hover {
   justify-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 10rem;
   grid-gap: 3rem 3rem;
   width: 80vw;
 }
@@ -93,6 +94,11 @@ a:hover {
 
 .btn-search {
   padding: .4rem;
+}
+
+.btn-show {
+  position: absolute;
+  bottom: 8rem;
 }
 
 .form-inline {

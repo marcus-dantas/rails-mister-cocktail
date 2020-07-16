@@ -6,7 +6,7 @@
   </div>
   <div class="search">
     # <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-      <%= f.input :name, label: false, input_html: {value: "Your cocktail awaits"} %>
+      <%= f.input :name, label: false, input_html: {value: ""} %>
       <%= f.submit "Find", class: "btn-yours btn-search", id: "main-btn", turbolinks: true %>
     <% end %>
   </div>
