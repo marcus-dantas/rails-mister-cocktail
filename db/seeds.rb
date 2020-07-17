@@ -15,21 +15,39 @@ puts 'Cleaning DB'
 Ingredient.destroy_all
 
 puts 'Generating new DB'
-Ingredient.create(name: 'lemon')
-Ingredient.create(name: 'ice')
-Ingredient.create(name: 'mint leaves')
-ingredients['drinks'].each do |ingredient|
-  Ingredient.create(
-    name: ingredient['strIngredient1']
-  )
-  puts "created ingredient #{Ingredient.name}"
-end
 
+#This was just three ingredients that I decided to create
+Ingredient.create(name: 'lemon')
+puts "created ingredient #{Ingredient.first.name}"
+Ingredient.create(name: 'ice')
+puts "created ingredient #{Ingredient.second.name}"
+Ingredient.create(name: 'mint leaves')
+puts "created ingredient #{Ingredient.third.name}"
+
+#This is the iteration that is parsing the list
+# of ingredients from a JSON file
+# ingredients['drinks'].each do |ingredient|
+#   Ingredient.create(
+#     name: ingredient.dig["strIngredient1"]
+#   )
+#   puts "created ingredient #{Ingredient.name}"
+# end
+
+# ingredients.each do |ingredient|
+#   Ingredient.create(
+#     name: ingredient["ingredients"]
+#   )
+#   puts "created ingredient #{}"
+# end
+
+#This is an iteration to parse the drinks and preparation
 cocktails.each do |cocktail|
   Cocktail.create!(name: cocktail["name"],
                    glass: cocktail["glass"],
-                   category:["category"],
+                   category: cocktail["category"],
+                   # ingredients: cocktail.dig["ingredients", "ingredient"],
                    preparation: cocktail["preparation"])
+  puts "created cocktail #{Cocktail.name}"
 end
 
 puts 'Finished!'

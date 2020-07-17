@@ -2,6 +2,14 @@
 @media (min-width: 100px) and (max-width: 575px) {
   .cocktail-container {
     grid-template-columns: 1fr;
+    font-size: .1rem;
+  }
+  .cocktail-show {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+  .btn-search {
+    margin-bottom: 1rem;
   }
 }
 
@@ -9,6 +17,14 @@
 @media (min-width: 576px) {
   .cocktail-container {
     grid-template-columns: 1fr;
+    font-size: .25rem;
+  }
+  .cocktail-show {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+  .btn-search {
+    margin-bottom: 1rem;
   }
 }
 
@@ -16,6 +32,14 @@
 @media (min-width: 768px) {
   .cocktail-container {
     grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+  }
+  .cocktail-show {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+  .btn-search {
+    margin-bottom: 1rem;
   }
 }
 
@@ -24,12 +48,34 @@
   .cocktail-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .cocktail-show {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2.5rem;
+  }
+  .btn-show {
+    // Styling for the back button on show page
+  }
+  .form-inline {
+    position: absolute;
+    right: 20%;
+    top: 60%;
+  }
+  .form-container {
+    transform: translate(25rem);
+  }
+  .btn-search {
+    margin-bottom: 0;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cocktail-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .cocktail-show {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2.5rem;
   }
 }
 

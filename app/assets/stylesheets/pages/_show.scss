@@ -1,16 +1,21 @@
 .cocktail-show {
-  display: flex;
+  display: grid;
   justify-content: space-evenly;
-  padding-top: 5rem;
+  margin-bottom: 7rem;
 }
 
 .cocktail-pic {
   height: 45rem;
   width: 30rem;
   border-radius: .6rem;
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+
+.cocktail-description {
+  justify-self: center;
 }
 
 .cocktail-name {
   color: white;
-
 }

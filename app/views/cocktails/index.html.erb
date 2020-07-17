@@ -5,7 +5,7 @@
     <p class="remove-decoration" id="main-btn"><%= link_to "Create a Cocktail", new_cocktail_path, class: "btn-yours" %></p>
   </div>
   <div class="search">
-    # <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+      <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
       <%= f.input :name, label: false, input_html: {value: ""} %>
       <%= f.submit "Find", class: "btn-yours btn-search", id: "main-btn", turbolinks: true %>
     <% end %>
@@ -22,11 +22,8 @@
 
 <div class="footer">
   <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/kinho107"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/marcus-dantas-dev/"><i class="fab fa-linkedin"></i></a>
   </div>
   <div class="footer-copyright">
     Made with <i class="fas fa-heart"></i>

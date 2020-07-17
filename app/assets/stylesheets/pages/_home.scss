@@ -80,7 +80,7 @@ a:hover {
 }
 
 .cocktail-card::hover {
-  transform: translateY(-3px);
+  transform: translateY(-.3rem);
   box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
 
@@ -96,19 +96,8 @@ a:hover {
   padding: .4rem;
 }
 
-.btn-show {
-  position: absolute;
-  bottom: 8rem;
-}
-
-.form-inline {
-  position: absolute;
-  right: 20%;
-  top: 60%;
-}
-
 .form-control {
-  height: calc(1.5em + 2.75rem + 2px) !important;
+  height: calc(1.5em + 2.75rem + .2rem) !important;
   width: 25rem !important;
   font-size: 1rem;
 }

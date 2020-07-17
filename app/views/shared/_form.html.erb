@@ -3,6 +3,7 @@
     <%= f.input :name,  placeholder: "What's the name of your cocktail?" %>
     <%= f.association :ingredients, as: :check_boxes, item_label_class: 'form-checkboxes'  %>
     <%= f.input :preparation, as: :text %>
+    <%= f.input :photo, as: :file %>
     <%= f.button :submit, class: 'btn btn-secondary' %>
     <%= link_to 'back', root_path, class: 'btn btn-secondary' %>
   <% end %>
